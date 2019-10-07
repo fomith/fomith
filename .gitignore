@@ -5,6 +5,8 @@
 *.rar
 *.psd
 *.scssc
+*.scss
+*.sass
 /sass/*
 *.gitignore
-.map
+*.map
