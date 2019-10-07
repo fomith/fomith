@@ -7,3 +7,4 @@
 *.scssc
 /sass/*
 *.gitignore
+.map
