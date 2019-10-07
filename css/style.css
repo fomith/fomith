@@ -17,6 +17,9 @@
 @font-face {
   font-family: "LibreBaskerville-Bold";
   src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "poppins-Bold";
+  src: url("../fonts/poppins-bold.ttf") format("truetype"); }
 .container {
   box-sizing: border-box;
   width: 1170px;
