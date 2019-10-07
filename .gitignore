@@ -5,3 +5,5 @@
 *.rar
 *.psd
 *.scssc
+/sass/*
+*.gitignore

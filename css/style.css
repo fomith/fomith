@@ -17,9 +17,6 @@
 @font-face {
   font-family: "LibreBaskerville-Bold";
   src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"); }
-body {
-  background-color: #e6a1a1; }
-
 .container {
   box-sizing: border-box;
   width: 1170px;
@@ -35,33 +32,28 @@ a {
 /* Header */
 header {
   background-color: #fff; }
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  height: 75px; }
-
-header div > a {
-  font-family: "wisdom-script";
-  color: #616161;
-  font-size: 35px;
-  margin: 12px; }
-
-header div > a::first-letter {
-  color: #fc5f45; }
-
-nav ul {
-  display: flex;
-  height: 100%;
-  margin: 0; }
-
-header nav a {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin: 0 5px;
-  font-family: "poppins-medium";
-  color: #272727; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 75px; }
+  header div > a {
+    font-family: "wisdom-script";
+    color: #616161;
+    font-size: 35px;
+    margin: 12px; }
+  header div > a::first-letter {
+    color: #fc5f45; }
+  header nav ul {
+    display: flex;
+    height: 100%;
+    margin: 0; }
+  header nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 5px;
+    font-family: "poppins-medium";
+    color: #272727; }
 
 /* main home */
 main .home {

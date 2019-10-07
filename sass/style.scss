@@ -1,133 +1,18 @@
+// Сброс стилей браузера
 @import "./normalize.css";
+//Подключаем шрифты
 @import "fonts";
+// Наша цветовая палитра
 @import "color-pack";
 
-body {
-    background-color: rgb(230, 161, 161);
-}
+// Общие стили для боди и тп
+@import "_general-styles";
 
-.container {
-    box-sizing: border-box;
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+//Стили Хедера
+@import "header";
 
-ul {
-    list-style: none;
-}
+@import "main-home";
 
-a {
-    text-decoration: none;
-}
-
-/* Header */
-
-header {
-    background-color: #fff;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-}
-
-header div>a {
-    font-family: "wisdom-script";
-    color: #616161;
-    font-size: 35px;
-    margin: 12px;
-}
-
-header div>a::first-letter {
-    color: #fc5f45;
-}
-
-nav ul {
-    display: flex;
-    height: 100%;
-    margin: 0;
-}
-
-header nav a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0 5px;
-    font-family: "poppins-medium";
-    color: #272727;
-}
-
-/* main home */
-
-main .home {
-    border: 1px solid transparent;
-    background-image: linear-gradient(to top, rgba(38, 39, 50, .8), rgba(38, 39, 50, .8)), url(../Image/home-bg.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.home .container {
-    text-align: center;
-}
-
-.home h2 {
-    font-family: "libre-baskerville";
-    font-size: 60px;
-    margin: 160px 100px 42px;
-    line-height: 86px;
-    color: #fff;
-}
-
-.home a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: #fc5f45;
-}
-
-.home .container div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 85px 200px;
-    margin-bottom: 166px;
-}
-
-.home .container a {
-    font-family: "poppins-semibold";
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #eee;
-    border-radius: 25px;
-}
-
-.home .container span {
-    width: 235px;
-}
-
-.home span p {
-    font-family: "poppins-medium";
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
-
-.home-block-left {
-    color: #38c695;
-}
-
-.home-block-center {
-    color: #b27cf5;
-}
-
-.home-block-right {
-    color: #feb960
-}
 
 /* main about */
 
