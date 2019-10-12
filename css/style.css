@@ -45,7 +45,9 @@ a {
 
 /* Header */
 header {
-  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 header .container {
   display: flex;
@@ -54,9 +56,12 @@ header .container {
 }
 header div > a {
   font-family: "wisdom-script";
-  color: #616161;
+  color: #fff;
   font-size: 35px;
   margin: 12px;
+}
+header div > a:hover {
+  color: #fc5f45;
 }
 header div > a::first-letter {
   color: #fc5f45;
@@ -72,6 +77,20 @@ header nav a {
   height: 100%;
   margin: 0 5px;
   font-family: "poppins-medium";
+  color: #fff;
+}
+header nav a:hover {
+  color: #fc5f45;
+}
+
+.header-fixed {
+  position: fixed;
+  background-color: #fff;
+}
+.header-fixed div > a {
+  color: #616161;
+}
+.header-fixed nav a {
   color: #272727;
 }
 
@@ -90,7 +109,7 @@ main .home {
 .home h2 {
   font-family: "libre-baskerville";
   font-size: 60px;
-  margin: 160px 100px 42px;
+  margin: 236px 100px 42px;
   line-height: 86px;
   color: #fff;
 }
@@ -109,8 +128,7 @@ main .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 85px 200px;
-  margin-bottom: 166px;
+  margin: 84px 200px 153px 178px;
 }
 
 .home .container a {
@@ -618,7 +636,7 @@ main .stats {
   header .container {
     display: block;
     width: auto;
-    min-height: 60px;
+    min-height: 70px;
     height: max-content;
   }
 
@@ -626,7 +644,7 @@ main .stats {
     font-family: "wisdom-script";
     color: #616161;
     font-size: 35px;
-    display: block;
+    display: inline-block;
     margin: 0;
     margin-top: 12px;
   }
@@ -642,7 +660,7 @@ main .stats {
   }
 
   .nav_icon:after, .nav_icon:before, .nav_icon div {
-    background-color: #000000;
+    background-color: #fc5f45;
     border-radius: 3px;
     content: "";
     display: block;
@@ -651,15 +669,15 @@ main .stats {
     transition: all 0.2s ease-in-out;
   }
 
-  .nav_icon.active:before {
+  .nav_icon.active-icon:before {
     transform: translateY(12px) rotate(135deg);
   }
 
-  .nav_icon.active:after {
+  .nav_icon.active-icon:after {
     transform: translateY(-12px) rotate(-135deg);
   }
 
-  .nav_icon.active div {
+  .nav_icon.active-icon div {
     transform: scale(0);
   }
 
@@ -672,8 +690,12 @@ main .stats {
     display: none;
   }
 
-  .active {
+  header .active {
     display: block;
+  }
+
+  .active-header {
+    background-color: #fff;
   }
 
   header nav ul {
@@ -710,6 +732,10 @@ main .stats {
   .home .container div {
     margin: 0;
     margin-bottom: 91px;
+  }
+
+  .home .container span:first-child {
+    display: none;
   }
 }
 
