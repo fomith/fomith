@@ -613,7 +613,7 @@ main .stats {
   header .container {
     display: block;
     width: auto;
-    min-height: 70px;
+    min-height: 60px;
     height: max-content;
   }
 
@@ -622,6 +622,7 @@ main .stats {
     color: #616161;
     font-size: 35px;
     display: block;
+    margin: 0;
     margin-top: 12px;
   }
 
