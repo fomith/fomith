@@ -733,7 +733,8 @@ main .stats {
     margin: 0;
     margin-bottom: 91px;
   }
-
+}
+@media only screen and (min-width: 100px) and (max-width: 500px) {
   .home .container span:first-child {
     display: none;
   }
