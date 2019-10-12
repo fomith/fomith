@@ -86,6 +86,7 @@ header nav a:hover {
 .header-fixed {
   position: fixed;
   background-color: #fff;
+  z-index: 100;
 }
 .header-fixed div > a {
   color: #616161;
