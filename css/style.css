@@ -609,7 +609,7 @@ main .stats {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 1000px) {
+@media only screen and (min-width: 100px) and (max-width: 960px) {
   header .container {
     display: block;
     width: auto;
@@ -622,7 +622,7 @@ main .stats {
     color: #616161;
     font-size: 35px;
     display: block;
-    margin-top: 9px;
+    margin-top: 12px;
   }
 
   /* кнопка навигации */
