@@ -610,6 +610,11 @@ main .stats {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 960px) {
+  /* общие */
+  .container {
+    width: auto;
+  }
+
   header .container {
     display: block;
     width: auto;
@@ -688,6 +693,23 @@ main .stats {
 
   header li:hover {
     background-color: aliceblue;
+  }
+
+  /* main home */
+  .home h2 {
+    font-size: 35px;
+    margin: 60px 0;
+    line-height: 55px;
+    color: #fff;
+  }
+
+  .home a {
+    margin: 55px auto;
+  }
+
+  .home .container div {
+    margin: 0;
+    margin-bottom: 91px;
   }
 }
 
