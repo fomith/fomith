@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./normalize.css";
 @font-face {
   font-family: "poppins-medium";
@@ -606,6 +607,86 @@ main .stats {
 .pricing article > p {
   font-family: "poppins-regular";
   line-height: 1.5;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
+  header .container {
+    display: block;
+    width: auto;
+    height: max-content;
+  }
+
+  header div > a {
+    font-family: "wisdom-script";
+    color: #616161;
+    font-size: 35px;
+    display: block;
+    margin-top: 9px;
+  }
+
+  /* кнопка навигации */
+  header .nav_icon {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 21px;
+    right: 25px;
+  }
+
+  .nav_icon:after, .nav_icon:before, .nav_icon div {
+    background-color: #000000;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav_icon.active:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  .nav_icon.active:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  .nav_icon.active div {
+    transform: scale(0);
+  }
+
+  .nav_icon:before {
+    margin-top: 0;
+  }
+
+  /* навигация */
+  header nav {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  header nav ul {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav a {
+    display: flex;
+    margin: 0 5px;
+    font-family: "poppins-medium";
+    color: #272727;
+    padding: 8px;
+  }
+
+  header li:hover {
+    background-color: aliceblue;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
