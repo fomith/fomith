@@ -613,6 +613,7 @@ main .stats {
   header .container {
     display: block;
     width: auto;
+    min-height: 70px;
     height: max-content;
   }
 
