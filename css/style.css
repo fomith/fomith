@@ -185,6 +185,9 @@ main .home {
   left: -65px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #fc5f45, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960);
+  border-image-slice: 1;
 }
 
 .about .container div img {
