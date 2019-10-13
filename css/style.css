@@ -208,29 +208,6 @@ main .home {
   line-height: 27px;
 }
 
-.about-border {
-  display: inline-block;
-  width: 144px;
-  height: 3px;
-  margin: 71px 0 0 0;
-}
-
-.left {
-  background-color: #fc5f45;
-}
-
-.center-left {
-  background-color: #38c695;
-}
-
-.center-right {
-  background-color: #b27cf5;
-}
-
-.right {
-  background-color: #feb960;
-}
-
 /* main services */
 .services {
   background-color: #f7f7f7;
