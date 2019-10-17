@@ -32,3 +32,4 @@ $(window).scroll(function() {
     $('nav_icon').removeClass('header-fixed');
     }
     });
+    
