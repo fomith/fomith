@@ -49,34 +49,28 @@ header {
   left: 0;
   right: 0;
 }
-
 header .container {
   display: flex;
   justify-content: space-between;
   height: 75px;
 }
-
 header div > a {
   font-family: "wisdom-script";
   color: #fff;
   font-size: 35px;
   margin: 12px;
 }
-
 header div > a:hover {
   color: #fc5f45;
 }
-
 header div > a::first-letter {
   color: #fc5f45;
 }
-
 header nav ul {
   display: flex;
   height: 100%;
   margin: 0;
 }
-
 header nav a {
   display: flex;
   align-items: center;
@@ -85,7 +79,6 @@ header nav a {
   font-family: "poppins-medium";
   color: #fff;
 }
-
 header nav a:hover {
   color: #fc5f45;
 }
@@ -95,11 +88,9 @@ header nav a:hover {
   background-color: #fff;
   z-index: 100;
 }
-
 .header-fixed div > a {
   color: #616161;
 }
-
 .header-fixed nav a {
   color: #272727;
 }
@@ -119,7 +110,7 @@ main .home {
 .home h2 {
   font-family: "libre-baskerville";
   font-size: 60px;
-  margin: 160px 100px 42px;
+  margin: 236px 100px 42px;
   line-height: 86px;
   color: #fff;
 }
@@ -138,8 +129,7 @@ main .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 85px 200px;
-  margin-bottom: 166px;
+  margin: 84px 200px 153px 178px;
 }
 
 .home .container a {
@@ -195,6 +185,9 @@ main .home {
   left: -65px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #fc5f45, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960);
+  border-image-slice: 1;
 }
 
 .about .container div img {
@@ -213,29 +206,6 @@ main .home {
   margin: 0px 40px 30px 40px;
   font-size: 15px;
   line-height: 27px;
-}
-
-.about-border {
-  display: inline-block;
-  width: 144px;
-  height: 3px;
-  margin: 71px 0 0 0;
-}
-
-.left {
-  background-color: #fc5f45;
-}
-
-.center-left {
-  background-color: #38c695;
-}
-
-.center-right {
-  background-color: #b27cf5;
-}
-
-.right {
-  background-color: #feb960;
 }
 
 /* main services */
@@ -548,6 +518,7 @@ main .stats {
   position: relative;
 }
 
+
 .pricing .container > img {
   position: absolute;
 }
@@ -649,7 +620,6 @@ main .stats {
     width: auto;
     min-height: 70px;
     height: max-content;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   }
 
   header div > a {
@@ -698,6 +668,10 @@ main .stats {
   }
 
   /* навигация */
+  header nav {
+    display: none;
+  }
+
   header .active {
     display: block;
   }
