@@ -51,6 +51,13 @@ window.onload = function () {
         default:
             logotype = '<img class="logotype" src="./Image/1.jpg" alt="">';
     }
+
+    if (name === null) 
+    name = "Аноним";
+
+    if (patronymic === null) 
+    patronymic = "Анонимусович";
+
     let fullname = name + ' ' + patronymic;
 
     let yearsName = 0;
