@@ -86,16 +86,12 @@ window.onload = function () {
         days = years * 365
     }
 
-    
-
-
     document.getElementById('logotype').innerHTML = logotype;
     document.getElementById('fullname').innerHTML = fullname;
     document.getElementById('surname').innerHTML = surname;
     document.getElementById('years').innerHTML = years + yearsName;
     document.getElementById('days').innerHTML = 'Возраст в днях: ' + days;
     document.getElementById('old').innerHTML = oldyears;
-
 
     if (male == 0) {
         document.getElementById("container").classList.add("purple");
