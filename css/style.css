@@ -28,6 +28,10 @@
   font-family: "poppins-Bold";
   src: url("../fonts/poppins-bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "sacramento.regular";
+  src: url("../fonts/sacramento.regular.ttf ") format("truetype");
+}
 .container {
   box-sizing: border-box;
   width: 1170px;
@@ -509,6 +513,7 @@ main .stats {
 /*main pricing*/
 .pricing {
   background-color: #f7f7f7;
+  padding-bottom: 145px;
 }
 
 .pricing .container {
@@ -609,6 +614,142 @@ main .stats {
   line-height: 1.5;
 }
 
+.pricing-elements a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 38px auto;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: "poppins-semibold";
+}
+
+.pricing-left {
+  border: 2px solid #38c695;
+}
+
+.pricing-right {
+  border: 2px solid #b27cf5;
+}
+
+.pricing-center {
+  border: 2px solid #fc5f45;
+  background-color: #fc5f45;
+}
+
+.pricing-left:hover {
+  background-color: #38c695;
+  box-shadow: 0 0 0px 3px #38c695;
+  border: 2px solid #eee;
+}
+
+.pricing-right:hover {
+  background-color: #b27cf5;
+  box-shadow: 0 0 0px 3px #b27cf5;
+  border: 2px solid #eee;
+}
+
+.pricing-center:hover {
+  background-color: #fc5f45;
+  box-shadow: 0 0 0px 3px #fc5f45;
+  border: 2px solid #eee;
+}
+
+/*main testimonials*/
+.testimonials {
+  background-color: #262732d5;
+  padding-bottom: 120px;
+}
+
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials .container > img {
+  position: absolute;
+}
+
+.testimonials .container > h2 {
+  font-family: "LibreBaskerville-Bold";
+  margin-top: 143px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 7px;
+  color: white;
+  z-index: 2;
+}
+
+.testimonials .container > p {
+  font-size: 19px;
+  text-align: center;
+  font-family: "poppins-regular";
+  margin-bottom: 78px;
+  color: white;
+}
+
+.slider {
+  width: 1170px;
+}
+
+.slide-promo img {
+  width: 384px;
+  height: 399px;
+}
+
+.slide-promo-box {
+  background-color: #eee;
+}
+
+.slide-promo-box div {
+  margin: 50px;
+}
+
+.slide-promo-box img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.slide-promo {
+  display: flex !important;
+  align-items: center;
+}
+
+.slide-promo-box div p {
+  font-size: 15px;
+  font-family: "poppins-regular";
+  color: #616161;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.slide-promo-box .signature {
+  font-size: 40px;
+  font-family: "sacramento.regular";
+  color: #272727;
+  line-height: 2;
+  margin: 0;
+}
+
+.slide-promo-box h3 {
+  font-size: 18px;
+  font-family: "poppins-medium";
+  color: #272727;
+  margin: 0;
+}
+
+.slide-promo-box h4 {
+  font-size: 13px;
+  font-family: "poppins-medium";
+  color: #fc5f45;
+  margin: 0;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 960px) {
   /* общие */
   .container {
@@ -641,7 +782,9 @@ main .stats {
     right: 25px;
   }
 
-  .nav_icon:after, .nav_icon:before, .nav_icon div {
+  .nav_icon:after,
+.nav_icon:before,
+.nav_icon div {
     background-color: #fc5f45;
     border-radius: 3px;
     content: "";
