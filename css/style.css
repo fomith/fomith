@@ -779,6 +779,90 @@ main .stats {
   margin: 0;
 }
 
+/*main select*/
+.select {
+  background-color: #f7f7f7;
+  padding-bottom: 27px;
+}
+
+.select .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.select .container > img {
+  position: absolute;
+}
+
+.select .container > h2 {
+  font-family: "LibreBaskerville-Bold";
+  margin-top: 143px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.select .container > p {
+  font-size: 19px;
+  text-align: center;
+  font-family: "poppins-regular";
+  margin-bottom: 35px;
+}
+
+.select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.select-grid div {
+  padding: 31px 33px;
+}
+
+.select-grid img {
+  position: absolute;
+}
+
+.select-grid h3 {
+  margin: 0 60px;
+  font-family: "poppins-medium";
+  font-size: 18px;
+  color: #272727;
+  line-height: 1.444;
+}
+
+.select-grid p {
+  font-family: "poppins-regular";
+  font-size: 15px;
+  color: #616161;
+  line-height: 1.8;
+}
+
+.select a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: "poppins-semibold";
+  color: #eeeeee;
+}
+
+.select span {
+  margin: 118px 0;
+}
+
+.select span p {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "poppins-regular";
+  color: #272727;
+  margin: 0 20px;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 960px) {
   /* общие */
   .container {
