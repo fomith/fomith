@@ -53,28 +53,34 @@ header {
   left: 0;
   right: 0;
 }
+
 header .container {
   display: flex;
   justify-content: space-between;
   height: 75px;
 }
+
 header div > a {
   font-family: "wisdom-script";
   color: #fff;
   font-size: 35px;
   margin: 12px;
 }
+
 header div > a:hover {
   color: #fc5f45;
 }
+
 header div > a::first-letter {
   color: #fc5f45;
 }
+
 header nav ul {
   display: flex;
   height: 100%;
   margin: 0;
 }
+
 header nav a {
   display: flex;
   align-items: center;
@@ -83,6 +89,7 @@ header nav a {
   font-family: "poppins-medium";
   color: #fff;
 }
+
 header nav a:hover {
   color: #fc5f45;
 }
@@ -92,9 +99,11 @@ header nav a:hover {
   background-color: #fff;
   z-index: 100;
 }
+
 .header-fixed div > a {
   color: #616161;
 }
+
 .header-fixed nav a {
   color: #272727;
 }
@@ -114,7 +123,7 @@ main .home {
 .home h2 {
   font-family: "libre-baskerville";
   font-size: 60px;
-  margin: 236px 100px 42px;
+  margin: 160px 100px 42px;
   line-height: 86px;
   color: #fff;
 }
@@ -133,7 +142,8 @@ main .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 84px 200px 153px 178px;
+  margin: 85px 200px;
+  margin-bottom: 166px;
 }
 
 .home .container a {
@@ -189,9 +199,6 @@ main .home {
   left: -65px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  border-bottom: 3px solid transparent;
-  border-image: linear-gradient(90deg, #fc5f45, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960);
-  border-image-slice: 1;
 }
 
 .about .container div img {
@@ -210,6 +217,29 @@ main .home {
   margin: 0px 40px 30px 40px;
   font-size: 15px;
   line-height: 27px;
+}
+
+.about-border {
+  display: inline-block;
+  width: 144px;
+  height: 3px;
+  margin: 71px 0 0 0;
+}
+
+.left {
+  background-color: #fc5f45;
+}
+
+.center-left {
+  background-color: #38c695;
+}
+
+.center-right {
+  background-color: #b27cf5;
+}
+
+.right {
+  background-color: #feb960;
 }
 
 /* main services */
@@ -523,7 +553,6 @@ main .stats {
   position: relative;
 }
 
-
 .pricing .container > img {
   position: absolute;
 }
@@ -750,6 +779,90 @@ main .stats {
   margin: 0;
 }
 
+/*main select*/
+.select {
+  background-color: #f7f7f7;
+  padding-bottom: 27px;
+}
+
+.select .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.select .container > img {
+  position: absolute;
+}
+
+.select .container > h2 {
+  font-family: "LibreBaskerville-Bold";
+  margin-top: 143px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.select .container > p {
+  font-size: 19px;
+  text-align: center;
+  font-family: "poppins-regular";
+  margin-bottom: 35px;
+}
+
+.select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.select-grid div {
+  padding: 31px 33px;
+}
+
+.select-grid img {
+  position: absolute;
+}
+
+.select-grid h3 {
+  margin: 0 60px;
+  font-family: "poppins-medium";
+  font-size: 18px;
+  color: #272727;
+  line-height: 1.444;
+}
+
+.select-grid p {
+  font-family: "poppins-regular";
+  font-size: 15px;
+  color: #616161;
+  line-height: 1.8;
+}
+
+.select a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: "poppins-semibold";
+  color: #eeeeee;
+}
+
+.select span {
+  margin: 118px 0;
+}
+
+.select span p {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "poppins-regular";
+  color: #272727;
+  margin: 0 20px;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 960px) {
   /* общие */
   .container {
@@ -761,6 +874,7 @@ main .stats {
     width: auto;
     min-height: 70px;
     height: max-content;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   }
 
   header div > a {
@@ -811,7 +925,7 @@ main .stats {
   }
 
   /* навигация */
-  header nav {
+  nav.menu_panel {
     display: none;
   }
 
