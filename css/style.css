@@ -1051,6 +1051,10 @@ main .stats {
     width: auto;
   }
 
+.mobile-screan {
+Width: 100%;
+}
+
   header .container {
     display: block;
     width: auto;
