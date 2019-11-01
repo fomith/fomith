@@ -1,6 +1,6 @@
 window.onload = function(){
     if(window.innerWidth >= 1024)
-    document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" style="width:100%; height: 500px;" title="1280" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
+    document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
 };
 
 $(document).ready(function(){

@@ -32,11 +32,6 @@
   font-family: "sacramento.regular";
   src: url("../fonts/sacramento.regular.ttf ") format("truetype");
 }
-.mobile-screan {
-Width: 100%;
-}
-
-
 .container {
   box-sizing: border-box;
   width: 1170px;
@@ -123,12 +118,12 @@ main .home {
 
 .home .container {
   text-align: center;
+  padding: 160px 0;
 }
 
 .home h2 {
   font-family: "libre-baskerville";
   font-size: 60px;
-  margin: 160px 100px 42px;
   line-height: 86px;
   color: #fff;
 }
@@ -147,8 +142,7 @@ main .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 85px 200px;
-  margin-bottom: 166px;
+  margin: 85px 200px 0 200px;
 }
 
 .home .container a {
@@ -184,7 +178,6 @@ main .home {
 
 /* main about */
 .about {
-  height: 985px;
   background-color: #fff;
   border-top: 1px solid transparent;
 }
@@ -194,7 +187,7 @@ main .home {
   align-items: center;
   background-color: #fff;
   border-top: 1px solid transparent;
-  margin: 130px auto;
+  padding: 130px 0;
 }
 
 .about .image-about {
@@ -272,16 +265,12 @@ main .home {
 
 .services-articles article {
   width: 262px;
-  height: 352px;
   background-color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-}
-
-.services-articles img {
-  margin-top: 65px;
+  padding: 65px 0;
 }
 
 .services-articles h2 {
@@ -313,10 +302,16 @@ main .home {
   border-bottom: 3px solid #feb960;
 }
 
+video {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
 /* main video-bg */
 /* main team */
 .team {
-  background-color: #f7f7f7;
+  background-color: #fff;
   height: 1230px;
 }
 
@@ -376,13 +371,13 @@ main .home {
 .team-articles .team-center-right .img {
   width: 263px;
   height: 270px;
-  background-image: linear-gradient(to top, rgba(254, 185, 96, 0.5), transparent), url(../Image/team-4foto.png);
+  background-image: linear-gradient(to top, rgba(178, 124, 245, 0.5), transparent), url(../Image/team-4foto.png);
 }
 
 .team-articles .team-right .img {
   width: 263px;
   height: 270px;
-  background-image: linear-gradient(to top, rgba(178, 124, 245, 0.5), transparent), url(../Image/team-3foto.png);
+  background-image: linear-gradient(to top, rgba(254, 185, 96, 0.5), transparent), url(../Image/team-3foto.png);
 }
 
 .team-articles h2 {
@@ -471,6 +466,7 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-bottom: 180px;
 }
 
 .work .container > span {
@@ -581,14 +577,9 @@ main .stats {
   line-height: 27px;
 }
 
-.work-info .team-right {
-  margin-bottom: 180px;
-}
-
 /*main pricing*/
 .pricing {
   background-color: #f7f7f7;
-  padding-bottom: 145px;
 }
 
 .pricing .container {
@@ -596,6 +587,7 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-bottom: 145px;
 }
 
 .pricing .container > img {
@@ -847,6 +839,7 @@ main .stats {
 
 .select .container > img {
   position: absolute;
+  opacity: 0.2;
 }
 
 .select .container > h2 {
@@ -918,7 +911,6 @@ main .stats {
 
 /*main blog*/
 .blog {
-  padding-bottom: 27px;
   background-color: #f7f7f7;
   z-index: -1;
 }
@@ -928,6 +920,7 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-bottom: 65px;
 }
 
 .blog .container > img {
@@ -1336,6 +1329,10 @@ footer div p {
   }
 
   /* main home */
+  .home .container {
+    padding: 50px 0;
+  }
+
   .home h2 {
     font-size: 35px;
     margin: 60px 0;
@@ -1350,6 +1347,55 @@ footer div p {
   .home .container div {
     margin: 0;
     margin-bottom: 91px;
+  }
+
+  .about .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .about .container .image-about {
+    width: 100vw;
+  }
+  .about .container div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+    height: auto;
+    left: 0;
+  }
+
+  .services .container > h2 {
+    font-size: 14vw;
+  }
+
+  .services-articles {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .services-articles article {
+    width: auto;
+    margin: 20px;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .team .container > h2 {
+    font-size: 14vw;
+  }
+
+  .team-articles {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+  }
+  .team-articles article {
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 500px) {
