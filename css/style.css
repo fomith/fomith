@@ -32,6 +32,11 @@
   font-family: "sacramento.regular";
   src: url("../fonts/sacramento.regular.ttf ") format("truetype");
 }
+.mobile-screan {
+Width: 100%;
+}
+
+
 .container {
   box-sizing: border-box;
   width: 1170px;
