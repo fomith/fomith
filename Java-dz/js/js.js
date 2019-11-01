@@ -81,9 +81,10 @@ window.onload = function () {
 
     if (Number.isNaN(years)) {
         years = 'Неизвестно сколько';
-        days = 'Неизвестно'
+        days = 'Неизвестно';
      } else {
-        days = years * 365
+        days = years * 365;
+        yearsnone = 'Будет через 5 лет: ';
     }
 
     document.getElementById('logotype').innerHTML = logotype;
@@ -92,7 +93,6 @@ window.onload = function () {
     document.getElementById('years').innerHTML = years + yearsName;
     document.getElementById('days').innerHTML = 'Возраст в днях: ' + days;
     document.getElementById('old').innerHTML = oldyears;
-
     if (male == 0) {
         document.getElementById("container").classList.add("purple");
     } else
