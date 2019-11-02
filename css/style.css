@@ -1375,6 +1375,15 @@ footer div p {
     align-items: center;
   }
 
+  .stats .container {
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .stats .container div {
+    margin: 8px;
+  }
+
   .services .container > h2 {
     font-size: 14vw;
   }
@@ -1407,7 +1416,7 @@ footer div p {
     flex-flow: wrap;
   }
   .team-articles article {
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   .work span {
@@ -1490,6 +1499,22 @@ footer div p {
     margin: 0 auto;
   }
 
+  .select span {
+    margin: auto;
+  }
+  .select span p {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .select span a {
+    display: grid;
+    margin: 20px auto;
+  }
+
+  footer {
+    padding-bottom: 0;
+  }
   footer .container {
     display: block;
   }
@@ -1499,6 +1524,7 @@ footer div p {
   }
   footer .container div a {
     width: auto;
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 500px) {
