@@ -1,25 +1,29 @@
-window.onload = function(){
-    if(window.innerWidth >= 1024)
-    document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
+window.onload = function () {
+    if (window.innerWidth >= 1024)
+        document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
 };
 
-$(document).ready(function(){
-    $("#menu_panel").on("click","a", function (event) {
+$(document).ready(function () {
+    $("#menu_panel").on("click", "a", function (event) {
         event.preventDefault();
-        let id  = $(this).attr('href'),
+        let id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+            
+        $(".nav_icon").removeClass("active-icon");
+        $(".menu_panel").removeClass("active");
+        $(".header").removeClass("active-header");
+        $('body,html').animate({ scrollTop: top }, 1500);
     });
-  });
+});
 
-  $(document).ready(function(){
-    $("#home").on("click","a", function (event) {
+$(document).ready(function () {
+    $("#home").on("click", "a", function (event) {
         event.preventDefault();
-        let id  = $(this).attr('href'),
+        let id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({ scrollTop: top }, 1500);
     });
-  });
+});
 
 let TriggerClick = 0;
 
@@ -38,16 +42,15 @@ $(".nav_icon").click(function () {
         $(".header").removeClass("active-header");
         $(".menu_panel").slideUp();
     }
-}); 
+});
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     let height = $(window).scrollTop();
-    if(height > 100){
-    $('header').addClass('header-fixed');
-    $('nav_icon').addClass('header-fixed');
-    } else{
-    $('header').removeClass('header-fixed');
-    $('nav_icon').removeClass('header-fixed');
+    if (height > 100) {
+        $('header').addClass('header-fixed');
+        $('nav_icon').addClass('header-fixed');
+    } else {
+        $('header').removeClass('header-fixed');
+        $('nav_icon').removeClass('header-fixed');
     }
-    });
-    
+});

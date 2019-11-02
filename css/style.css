@@ -185,6 +185,7 @@ main {
 .about {
   background-color: #fff;
   border-top: 1px solid transparent;
+  padding: 130px 0;
 }
 
 .about .container {
@@ -192,7 +193,6 @@ main {
   align-items: center;
   background-color: #fff;
   border-top: 1px solid transparent;
-  padding: 130px 0;
 }
 
 .about .image-about {
@@ -235,6 +235,7 @@ main {
 /* main services */
 .services {
   background-color: #f7f7f7;
+  padding-bottom: 145px;
 }
 
 .services .container {
@@ -263,7 +264,6 @@ main {
 .services-articles {
   width: 1170px;
   margin-top: 60px;
-  margin-bottom: 145px;
   display: flex;
   justify-content: space-between;
 }
@@ -1427,7 +1427,8 @@ footer div p {
     height: auto;
     margin: 10px auto;
   }
-  .work-info .work-block h2, .work-info .work-block p {
+  .work-info .work-block h2,
+.work-info .work-block p {
     margin: 40px 10px 10px 130px;
   }
 
@@ -1487,6 +1488,17 @@ footer div p {
   .select-grid div {
     width: 244px;
     margin: 0 auto;
+  }
+
+  footer .container {
+    display: block;
+  }
+  footer .container div {
+    width: 270px;
+    margin: 0 auto;
+  }
+  footer .container div a {
+    width: auto;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 500px) {
