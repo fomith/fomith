@@ -109,7 +109,12 @@ header nav a:hover {
 }
 
 /* main home */
-main .home {
+main {
+  width: 100vw;
+}
+
+.home {
+  width: 100%;
   border: 1px solid transparent;
   background-image: linear-gradient(to top, rgba(38, 39, 50, 0.8), rgba(38, 39, 50, 0.8)), url(../Image/home-bg.jpeg);
   background-position: center;
@@ -1409,13 +1414,21 @@ footer div p {
     display: none;
   }
 
+  .work .container {
+    padding-bottom: 30px;
+  }
+
   .work-info {
     width: 100vw;
   }
   .work-info .work-block {
     left: 0;
-    width: 100vw;
+    width: 95vw;
     height: auto;
+    margin: 10px auto;
+  }
+  .work-info .work-block h2, .work-info .work-block p {
+    margin: 40px 10px 10px 130px;
   }
 
   .testimonials {
@@ -1437,13 +1450,17 @@ footer div p {
     width: 100%;
   }
 
+  .pricing .container {
+    padding-bottom: 30px;
+  }
+
   .pricing-elements {
     width: 100%;
     flex-flow: wrap;
   }
 
   .pricing article {
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   .contact form {
