@@ -1418,6 +1418,10 @@ footer div p {
     height: auto;
   }
 
+  .testimonials {
+    display: none;
+  }
+
   .blog-grid {
     display: block;
   }
