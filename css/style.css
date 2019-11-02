@@ -1349,12 +1349,15 @@ footer div p {
     margin-bottom: 91px;
   }
 
+  .about h2 {
+    margin: 142px 0px 30px 40px;
+  }
   .about .container {
     flex-direction: column;
     padding: 0;
   }
   .about .container .image-about {
-    width: 100vw;
+    display: none;
   }
   .about .container div {
     position: relative;
@@ -1362,6 +1365,9 @@ footer div p {
     padding-bottom: 100px;
     height: auto;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .services .container > h2 {
@@ -1392,9 +1398,46 @@ footer div p {
     width: auto;
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
+    display: flex;
+    flex-flow: wrap;
   }
   .team-articles article {
+    margin: 0 auto;
+  }
+
+  .work span {
+    display: none;
+  }
+
+  .work-info {
+    width: 100vw;
+  }
+  .work-info .work-block {
+    left: 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  .blog-grid {
+    display: block;
+  }
+
+  .blog-full-article {
+    margin: 0 auto;
+  }
+
+  .blog-article {
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .pricing-elements {
+    width: 100%;
+    flex-flow: wrap;
+  }
+
+  .pricing article {
     margin: 0 auto;
   }
 }
