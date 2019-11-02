@@ -1423,13 +1423,14 @@ footer div p {
   }
 
   .blog-full-article {
-    margin: 0 auto;
+    display: none;
   }
 
   .blog-article {
     margin: 10px auto;
     box-sizing: border-box;
     padding: 20px;
+    width: 100%;
   }
 
   .pricing-elements {
@@ -1438,6 +1439,32 @@ footer div p {
   }
 
   .pricing article {
+    margin: 0 auto;
+  }
+
+  .contact form {
+    width: auto;
+  }
+  .contact form .sector-one,
+.contact form .sector-two {
+    display: block;
+    margin-bottom: 0;
+  }
+  .contact form input {
+    display: block;
+    width: 95vw;
+    margin: 5px auto;
+  }
+  .contact form textarea {
+    width: 95vw;
+  }
+
+  .select-grid {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .select-grid div {
+    width: 244px;
     margin: 0 auto;
   }
 }
