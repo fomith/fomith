@@ -29,6 +29,10 @@
   src: url("../fonts/poppins-bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "poppins-Extra-Bold";
+  src: url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
   font-family: "sacramento.regular";
   src: url("../fonts/sacramento.regular.ttf ") format("truetype");
 }
@@ -251,7 +255,7 @@ main {
 .container .number-block {
   color: rgba(224, 224, 224, 0.302);
   text-transform: uppercase;
-  font-family: "poppins-Bold";
+  font-family: "poppins-Extra-Bold";
   font-size: 250px;
   margin: 0;
   padding: 0;
