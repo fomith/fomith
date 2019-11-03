@@ -1416,6 +1416,7 @@ footer div p {
   /* общие */
   .container {
     width: auto;
+    padding-bottom: 0px;
   }
 
   header .container {
@@ -1526,9 +1527,6 @@ footer div p {
     margin-bottom: 91px;
   }
 
-  .about h2 {
-    margin: 142px 0px 30px 40px;
-  }
   .about .container {
     flex-direction: column;
     padding: 0;
@@ -1539,7 +1537,7 @@ footer div p {
   .about .container div {
     position: relative;
     width: 100%;
-    padding-bottom: 100px;
+    padding: 130px 30px 30px 40px;
     height: auto;
     left: 0;
     display: flex;
@@ -1554,6 +1552,10 @@ footer div p {
   }
   .stats .container div {
     margin: 8px;
+  }
+
+  .services .container {
+    padding-bottom: 0px;
   }
 
   .services .container > h2 {
@@ -1599,6 +1601,37 @@ footer div p {
     padding-bottom: 30px;
   }
 
+  .work-block img {
+    position: absolute;
+    left: 25px;
+    top: 14px;
+  }
+
+  .work-block h6 {
+    left: 3px;
+    top: 3px;
+  }
+
+  .slide-promo {
+    flex-direction: column;
+  }
+
+  .slide-promo img {
+    margin: 0 auto;
+  }
+
+  .slide-promo-box div {
+    box-sizing: border-box;
+    padding: 33px;
+    width: 100vw;
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: -27px;
+  }
+
   .work-info {
     width: 100vw;
   }
@@ -1607,14 +1640,7 @@ footer div p {
     width: 95vw;
     height: auto;
     margin: 10px auto;
-  }
-  .work-info .work-block h2,
-.work-info .work-block p {
-    margin: 40px 10px 10px 130px;
-  }
-
-  .testimonials {
-    display: none;
+    padding: 45px 10px 10px 85px;
   }
 
   .blog-grid {

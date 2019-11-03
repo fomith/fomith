@@ -3,12 +3,23 @@
 window.onload = function () {
     if (window.innerWidth >= 1024)
         document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
-};
+    //  if (window.innerWidth <= 960)
+    //  $(".services-articles").addClass("slider");
+    };
 
 //slick slider 
 
 $(document).ready(function(){
     $('.testimonials-slider').slick({
+        dots: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 1500,
+        arrows: false,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+    });
+    $('.slider').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
