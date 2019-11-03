@@ -37,6 +37,7 @@
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 ul {
@@ -45,6 +46,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  margin: 0;
 }
 
 /* Header */
@@ -123,7 +128,7 @@ main {
 
 .home .container {
   text-align: center;
-  padding: 160px 0;
+  padding: 230px 0 155px;
 }
 
 .home h2 {
@@ -131,6 +136,7 @@ main {
   font-size: 60px;
   line-height: 86px;
   color: #fff;
+  margin-bottom: 46px;
 }
 
 .home a {
@@ -185,7 +191,6 @@ main {
 .about {
   background-color: #fff;
   border-top: 1px solid transparent;
-  padding: 130px 0;
 }
 
 .about .container {
@@ -193,6 +198,7 @@ main {
   align-items: center;
   background-color: #fff;
   border-top: 1px solid transparent;
+  padding: 145px 0;
 }
 
 .about .image-about {
@@ -203,10 +209,11 @@ main {
 }
 
 .about .container div {
+  box-sizing: border-box;
   position: relative;
   width: 652px;
-  height: 552px;
   left: -65px;
+  padding: 93px 40px 115px 115px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid transparent;
@@ -214,20 +221,28 @@ main {
   border-image-slice: 1;
 }
 
-.about .container div img {
+.container .number-block {
+  color: rgba(224, 224, 224, 0.302);
+  text-transform: uppercase;
+  font-family: "poppins-Bold";
+  font-size: 250px;
+  margin: 0;
+  padding: 0;
   position: absolute;
+  top: 85px;
+  left: 0;
+  z-index: 0;
 }
 
 .about h2 {
   font-family: "LibreBaskerville-Bold";
-  margin: 92px 0px 30px 85px;
   font-size: 49px;
+  z-index: 2;
 }
 
 .about p {
   font-family: "poppins-regular";
   color: #616161;
-  margin: 0px 40px 30px 40px;
   font-size: 15px;
   line-height: 27px;
 }
@@ -235,13 +250,22 @@ main {
 /* main services */
 .services {
   background-color: #f7f7f7;
-  padding-bottom: 145px;
 }
 
 .services .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 145px;
+  padding-top: 138px;
+}
+
+.services .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
 }
 
 .services .container > img {
@@ -249,16 +273,17 @@ main {
 }
 
 .services .container > h2 {
-  margin-top: 135px;
   margin-bottom: 0px;
   font-size: 60px;
   font-family: "LibreBaskerville-Bold";
 }
 
-.services .container > p {
+.services p {
   margin-top: 23px;
   font-family: "poppins-regular";
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.66;
+  text-align: center;
 }
 
 .services-articles {
@@ -269,13 +294,14 @@ main {
 }
 
 .services-articles article {
+  box-sizing: border-box;
   width: 262px;
   background-color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  padding: 65px 0;
+  padding: 60px 35px;
 }
 
 .services-articles h2 {
@@ -287,7 +313,6 @@ main {
 
 .services-articles p {
   font-family: "poppins-regular";
-  margin: 0 35px;
   margin-top: 20px;
 }
 
@@ -309,7 +334,7 @@ main {
 
 video {
   width: 100%;
-  height: 70vh;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -324,6 +349,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 138px 0 400px;
 }
 
 .team .container > img {
@@ -331,13 +357,19 @@ video {
 }
 
 .team .container > h2 {
-  margin-top: 135px;
-  margin-bottom: 0px;
   font-size: 60px;
   font-family: "LibreBaskerville-Bold";
 }
 
-.team .container > p {
+.team .container .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.team p {
   margin-top: 23px;
   font-family: "poppins-regular";
   font-size: 18px;
@@ -353,7 +385,6 @@ video {
 
 .team-articles article {
   width: 262px;
-  height: 352px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -386,7 +417,8 @@ video {
 }
 
 .team-articles h2 {
-  margin-top: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
   font-family: "poppins-medium";
   font-size: 19px;
   color: #313131;
@@ -394,7 +426,8 @@ video {
 
 .team-articles p {
   font-family: "poppins-regular";
-  margin: 0 35px;
+  margin: 0 0 15px;
+  font-size: 15px;
 }
 
 .team-left {
@@ -454,11 +487,41 @@ main .stats {
 .stats h2 {
   font-family: "poppins-medium";
   font-size: 20px;
+  margin-top: 25px;
 }
 
 .stats p {
   font-family: "poppins-regular";
-  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.stats span {
+  margin-top: 15px;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.stats-bals-left {
+  background-color: #fc5f45;
+  box-shadow: 0 0 0px 2px #fc5f45;
+}
+
+.stats-bals-center-left {
+  background-color: #38c695;
+  box-shadow: 0 0 0px 2px #38c695;
+}
+
+.stats-bals-center-right {
+  background-color: #b27cf5;
+  box-shadow: 0 0 0px 2px #b27cf5;
+}
+
+.stats-bals-right {
+  background-color: #feb960;
+  box-shadow: 0 0 0px 2px #feb960;
 }
 
 /*main work*/
@@ -471,7 +534,16 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-bottom: 180px;
+  padding-top: 150px;
+  padding-bottom: 203px;
+}
+
+.work .container .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
 }
 
 .work .container > span {
@@ -539,21 +611,23 @@ main .stats {
 
 .work-info > h2 {
   font-family: "LibreBaskerville-Bold";
-  margin-top: 143px;
   font-size: 50px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .work-info > p {
   font-size: 19px;
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 }
 
 .work-block {
+  box-sizing: border-box;
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   border-top: 1px solid transparent;
+  padding: 48px 30px 10px 122px;
 }
 
 .work-right {
@@ -570,16 +644,14 @@ main .stats {
   top: 20px;
 }
 
+.work-block p {
+  line-height: 1.8;
+}
+
 .work-block img {
   position: absolute;
   left: 45px;
   top: 30px;
-}
-
-.work-block h2,
-.work-block p {
-  margin: 40px 70px 0 130px;
-  line-height: 27px;
 }
 
 /*main pricing*/
@@ -592,22 +664,25 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-bottom: 145px;
+  padding: 145px 0;
 }
 
-.pricing .container > img {
-  position: absolute;
+.pricing .container .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
 }
 
-.pricing .container > h2 {
+.pricing h2 {
   font-family: "LibreBaskerville-Bold";
-  margin-top: 143px;
   font-size: 50px;
   text-align: center;
   margin-bottom: 7px;
 }
 
-.pricing .container > p {
+.pricing p {
   font-size: 19px;
   text-align: center;
   font-family: "poppins-regular";
@@ -615,10 +690,12 @@ main .stats {
 }
 
 .pricing article {
+  position: relative;
   width: 360px;
-  height: 580px;
+  padding-bottom: 130px;
   background-color: #fff;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .pricing .starter {
@@ -638,7 +715,6 @@ main .stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .pricing article > h2 {
@@ -648,9 +724,11 @@ main .stats {
 }
 
 .pricing article div {
+  box-sizing: border-box;
   width: 105px;
   height: 105px;
   margin: 30px auto;
+  padding: 20px 0 0;
   border-radius: 50%;
   border: 3px solid #eee;
   font-family: "poppins-regular";
@@ -658,11 +736,14 @@ main .stats {
 }
 
 .pricing .pricing-elements div h2 {
+  font-family: "poppins-regular";
+  font-size: 25px;
   margin-bottom: 0px;
 }
 
 .pricing .pricing-elements div p {
   margin-top: 10px;
+  font-size: 17px;
 }
 
 .pricing .starter div {
@@ -682,7 +763,8 @@ main .stats {
 
 .pricing article > p {
   font-family: "poppins-regular";
-  line-height: 1.5;
+  line-height: 1.15;
+  margin-bottom: 0px;
 }
 
 .pricing-elements a {
@@ -695,7 +777,11 @@ main .stats {
   border-radius: 25px;
   text-transform: uppercase;
   font-family: "poppins-semibold";
-  transition: 1s;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .pricing-left {
@@ -719,7 +805,7 @@ main .stats {
   box-shadow: 0 0 0px 3px #38c695;
   border: 2px solid #eee;
   color: #eee;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .pricing-right:hover {
@@ -727,20 +813,19 @@ main .stats {
   box-shadow: 0 0 0px 3px #b27cf5;
   border: 2px solid #eee;
   color: #eee;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .pricing-center:hover {
   background-color: #fc5f45;
   box-shadow: 0 0 0px 3px #fc5f45;
   border: 2px solid #eee;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /*main testimonials*/
 .testimonials {
   background-color: #262732d5;
-  padding-bottom: 120px;
 }
 
 .testimonials .container {
@@ -748,15 +833,20 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 138px 15px 120px;
 }
 
-.testimonials .container > img {
-  position: absolute;
+.testimonials .container .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
+  color: #5d5d62;
 }
 
-.testimonials .container > h2 {
+.testimonials h2 {
   font-family: "LibreBaskerville-Bold";
-  margin-top: 143px;
   font-size: 50px;
   text-align: center;
   margin-bottom: 7px;
@@ -764,7 +854,7 @@ main .stats {
   z-index: 2;
 }
 
-.testimonials .container > p {
+.testimonials p {
   font-size: 19px;
   text-align: center;
   font-family: "poppins-regular";
@@ -786,7 +876,7 @@ main .stats {
 }
 
 .slide-promo-box div {
-  margin: 50px;
+  padding: 50px 60px 30px 70px;
 }
 
 .slide-promo-box img {
@@ -806,6 +896,7 @@ main .stats {
   color: #616161;
   line-height: 1.8;
   margin: 0;
+  text-align: left;
 }
 
 .slide-promo-box .signature {
@@ -814,6 +905,7 @@ main .stats {
   color: #272727;
   line-height: 2;
   margin: 0;
+  text-align: left;
 }
 
 .slide-promo-box h3 {
@@ -840,22 +932,25 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 150px 0 120px;
 }
 
-.select .container > img {
-  position: absolute;
-  opacity: 0.2;
+.select .container .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
 }
 
-.select .container > h2 {
+.select h2 {
   font-family: "LibreBaskerville-Bold";
-  margin-top: 143px;
   font-size: 50px;
   text-align: center;
   margin-bottom: 7px;
 }
 
-.select .container > p {
+.select p {
   font-size: 19px;
   text-align: center;
   font-family: "poppins-regular";
@@ -865,17 +960,25 @@ main .stats {
 .select-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 40px;
 }
 
 .select-grid div {
-  padding: 31px 33px;
+  padding: 103px 37px 31px;
+  position: relative;
 }
 
 .select-grid img {
   position: absolute;
+  top: 44px;
+  left: 40px;
 }
 
 .select-grid h3 {
+  position: absolute;
+  top: 40px;
+  left: 41px;
+  width: 140px;
   margin: 0 60px;
   font-family: "poppins-medium";
   font-size: 18px;
@@ -888,6 +991,7 @@ main .stats {
   font-size: 15px;
   color: #616161;
   line-height: 1.8;
+  text-align: left;
 }
 
 .select a {
@@ -900,10 +1004,6 @@ main .stats {
   text-transform: uppercase;
   font-family: "poppins-semibold";
   color: #eeeeee;
-}
-
-.select span {
-  margin: 118px 0;
 }
 
 .select span p {
@@ -925,26 +1025,30 @@ main .stats {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 142px;
   padding-bottom: 65px;
 }
 
-.blog .container > img {
-  position: absolute;
+.blog .container .number-block {
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1;
 }
 
-.blog .container > h2 {
+.blog h2 {
   font-family: "LibreBaskerville-Bold";
-  margin-top: 143px;
   font-size: 50px;
   text-align: center;
   margin-bottom: 7px;
 }
 
-.blog .container > p {
+.blog p {
   font-size: 19px;
   text-align: center;
   font-family: "poppins-regular";
-  margin-bottom: 35px;
+  margin-bottom: 77px;
 }
 
 .blog-grid {
@@ -982,7 +1086,7 @@ main .stats {
   z-index: 0;
 }
 
-.blog-child-name {
+.blog .blog-child-name {
   position: relative;
   margin-left: 35px;
   display: inline-block;
@@ -991,6 +1095,8 @@ main .stats {
   font-size: 15px;
   color: #fc5f45;
   text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 24px;
 }
 
 .blog-full-article h3 {
@@ -1009,9 +1115,10 @@ main .stats {
   line-height: 1.75;
   margin-left: 35px;
   margin-right: 35px;
+  text-align: left;
 }
 
-.article-0-text {
+.blog .article-0-text {
   display: inline-block;
   font-family: "poppins-regular";
   font-size: 15px;
@@ -1019,6 +1126,7 @@ main .stats {
   line-height: 1.8;
   margin-left: 35px;
   margin-right: 35px;
+  text-align: left;
 }
 
 .read-all-article-0 {
@@ -1036,7 +1144,8 @@ main .stats {
 }
 
 .blog-article {
-  padding: 20px;
+  box-sizing: border-box;
+  padding: 28px 35px 33px 47px;
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
@@ -1048,6 +1157,7 @@ main .stats {
   font-family: "poppins-regular";
   font-size: 13px;
   color: #616161;
+  margin: 0;
 }
 
 .blog-article h2 {
@@ -1055,6 +1165,7 @@ main .stats {
   font-family: "poppins-medium";
   font-size: 20px;
   color: #272727;
+  text-align: left;
 }
 
 .blog-article .article-0-text {
@@ -1467,10 +1578,13 @@ footer div p {
   .pricing-elements {
     width: 100%;
     flex-flow: wrap;
+    box-shadow: none;
+    margin: 0;
   }
 
   .pricing article {
     margin: 10px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   }
 
   .contact form {

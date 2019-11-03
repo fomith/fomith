@@ -1,9 +1,26 @@
+// video
+
 window.onload = function () {
     if (window.innerWidth >= 1024)
         document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
 };
 
-$(document).ready(function () {
+//slick slider 
+
+$(document).ready(function(){
+    $('.testimonials-slider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 1500,
+        arrows: false,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+    });
+  });
+  
+// scroll html
+
     $("#menu_panel").on("click", "a", function (event) {
         event.preventDefault();
         let id = $(this).attr('href'),
@@ -14,16 +31,15 @@ $(document).ready(function () {
         $(".header").removeClass("active-header");
         $('body,html').animate({ scrollTop: top }, 1500);
     });
-});
 
-$(document).ready(function () {
     $("#home").on("click", "a", function (event) {
         event.preventDefault();
         let id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top }, 1500);
     });
-});
+
+// menu mobile
 
 let TriggerClick = 0;
 
