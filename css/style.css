@@ -1612,8 +1612,18 @@ footer div p {
     top: 3px;
   }
 
+  .testimonials .container {
+    width: auto;
+  }
+
+  .slider {
+    width: 100vw;
+  }
+
   .slide-promo {
     flex-direction: column;
+    width: 100vw !important;
+    margin: 0 auto;
   }
 
   .slide-promo img {
