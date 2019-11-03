@@ -88,6 +88,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 header .container {
@@ -195,11 +196,11 @@ main {
   border-radius: 25px;
 }
 
-.home .container span {
+.home .container article {
   width: 235px;
 }
 
-.home span p {
+.home article p {
   font-family: "poppins-medium";
   font-size: 18px;
   text-transform: uppercase;
@@ -1063,7 +1064,7 @@ main .stats {
   color: #eeeeee;
 }
 
-.select span p {
+.select article p {
   display: inline-block;
   font-size: 25px;
   font-family: "poppins-regular";
@@ -1728,15 +1729,15 @@ footer div p {
     padding: 150px 0 0px;
   }
 
-  .select span {
+  .select article {
     margin: auto;
   }
-  .select span p {
+  .select article p {
     display: block;
     text-align: center;
     margin: 0 20px;
   }
-  .select span a {
+  .select article a {
     display: grid;
     margin: 20px auto;
   }
@@ -1757,7 +1758,7 @@ footer div p {
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 500px) {
-  .home .container span:first-child {
+  .home .container article:first-child {
     display: none;
   }
 }

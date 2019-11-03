@@ -5,11 +5,11 @@ window.onload = function () {
         document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
     //  if (window.innerWidth <= 960)
     //  $(".services-articles").addClass("slider");
-    };
+};
 
 //slick slider 
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.testimonials-slider').slick({
         dots: true,
         autoplay: true,
@@ -28,27 +28,30 @@ $(document).ready(function(){
         pauseOnHover: true,
         pauseOnDotsHover: true,
     });
-  });
-  
+});
+
 // scroll html
 
-    $("#menu_panel").on("click", "a", function (event) {
-        event.preventDefault();
-        let id = $(this).attr('href'),
-            top = $(id).offset().top;
-            
-        $(".nav_icon").removeClass("active-icon");
-        $(".menu_panel").removeClass("active");
-        $(".header").removeClass("active-header");
-        $('body,html').animate({ scrollTop: top }, 1500);
-    });
+$("#menu_panel").on("click", "a", function (event) {
+    event.preventDefault();
+    let id = $(this).attr('href'),
+        top = $(id).offset().top - 75 + 'px';
 
-    $("#home").on("click", "a", function (event) {
-        event.preventDefault();
-        let id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1500);
-    });
+    $(".nav_icon").removeClass("active-icon");
+    $(".menu_panel").removeClass("active");
+    $(".header").removeClass("active-header");
+    $('body,html').animate({ scrollTop: top }, 1500);
+});
+
+$("#home").on("click", "a", function (event) {
+    event.preventDefault();
+    let id = $(this).attr('href'),
+        top = $(id).offset().top - 75 + 'px';
+    $(".nav_icon").removeClass("active-icon");
+    $(".menu_panel").removeClass("active");
+    $(".header").removeClass("active-header");
+    $('body,html').animate({ scrollTop: 70 }, 1500);
+});
 
 // menu mobile
 
