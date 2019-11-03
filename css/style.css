@@ -1487,6 +1487,7 @@ footer div p {
 
   .active-header {
     background-color: #fff;
+    z-index: 10;
   }
 
   header nav ul {
