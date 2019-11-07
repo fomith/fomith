@@ -512,6 +512,7 @@ span.open-info {
   z-index: 2;
   padding: 60px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  height: 360px;
 }
 
 .info-block h2 {
