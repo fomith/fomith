@@ -3,8 +3,6 @@
 window.onload = function () {
     if (window.innerWidth >= 1171)
         document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
-    //  if (window.innerWidth <= 960)
-    //  $(".services-articles").addClass("slider");
 };
 
 //slick slider 

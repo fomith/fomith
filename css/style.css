@@ -1744,7 +1744,15 @@ footer div p {
   }
 
   .full-info-right {
+    margin: 0 auto;
     border-left: none;
+  }
+
+  .full-info-left {
+    width: 100%;
+  }
+  .full-info-left h2 {
+    text-align: center;
   }
 
   .info-block .share-social {
