@@ -50,6 +50,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #313131;
 }
 
 h2 {
@@ -374,14 +375,14 @@ video {
 /* main team */
 .team {
   background-color: #fff;
-  height: 1230px;
+  height: 1060px;
 }
 
 .team .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 138px 0 400px;
+  padding: 138px 0 40px;
 }
 
 .team .container > img {
@@ -410,7 +411,7 @@ video {
 .team-articles {
   width: 1170px;
   margin-top: 60px;
-  margin-bottom: 145px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -422,6 +423,7 @@ video {
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 
 .team-articles .team-left .img {
@@ -492,6 +494,88 @@ video {
 
 .team .team-right h2 {
   color: #feb960;
+}
+
+span.open-info {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: #e7e7e7;
+  bottom: -75px;
+  transform: rotate(45deg);
+  z-index: 3;
+}
+
+.info-block {
+  background-color: #e7e7e7;
+  display: flex;
+  z-index: 2;
+  padding: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-block h2 {
+  font-family: "poppins-medium";
+}
+
+.info-block > p {
+  font-family: "poppins-regular";
+}
+
+.info-block .share-social {
+  align-self: center;
+}
+
+.share-social-icon {
+  display: block;
+}
+.share-social-icon p {
+  display: inline-block;
+  margin: 6px;
+}
+
+.full-info-left {
+  width: 88%;
+}
+.full-info-left p {
+  width: 98%;
+}
+
+.info-block .share-social {
+  align-self: center;
+  margin: 0 33px;
+}
+
+.full-info-right {
+  width: 169px;
+  height: 130px;
+  border-left: 1px solid rgba(49, 49, 49, 0.2);
+  padding-left: 30px;
+  align-self: center;
+}
+
+.block-one,
+.block-two,
+.block-tree,
+.block-four {
+  position: absolute;
+  width: 1170px;
+  bottom: -269px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.info-left,
+.info-center-left,
+.info-center-right,
+.info-right {
+  opacity: 0;
+  background-color: #fff;
+}
+
+.open-info-activ {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /*main stats*/
@@ -1413,7 +1497,7 @@ footer div p {
   margin: 0 5px;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 960px) {
+@media only screen and (min-width: 100px) and (max-width: 1170px) {
   /* общие */
   .container {
     width: auto;
@@ -1447,6 +1531,14 @@ footer div p {
     top: 21px;
     right: 25px;
     z-index: 12;
+  }
+
+  .about .container .number-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .nav_icon:after,
@@ -1587,7 +1679,7 @@ footer div p {
   }
 
   .team-articles {
-    width: auto;
+    width: 100vw;
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
@@ -1595,6 +1687,83 @@ footer div p {
   }
   .team-articles article {
     margin: 10px auto;
+    width: 23%;
+    height: auto;
+  }
+
+  .team-articles .team-left .img {
+    border-radius: 50%;
+    width: 13vw;
+    height: 13vw;
+    background-size: contain;
+  }
+
+  .team-articles .team-center-left .img {
+    border-radius: 50%;
+    width: 13vw;
+    height: 13vw;
+    background-size: contain;
+  }
+
+  .team-articles .team-center-right .img {
+    border-radius: 50%;
+    width: 13vw;
+    height: 13vw;
+    background-size: contain;
+  }
+
+  .team-articles .team-right .img {
+    border-radius: 50%;
+    width: 13vw;
+    height: 13vw;
+    background-size: contain;
+  }
+
+  .team-articles p {
+    font-size: 2vw;
+  }
+
+  .team-articles h2 {
+    font-size: 2vw;
+  }
+
+  .info-block {
+    z-index: 4;
+    padding: 10px;
+  }
+
+  .block-one,
+.block-two,
+.block-tree,
+.block-four {
+    position: relative;
+    display: none;
+    bottom: 0;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .full-info-right {
+    border-left: none;
+  }
+
+  .info-block .share-social {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .info-left,
+.info-center-left,
+.info-center-right,
+.info-right {
+    display: none;
+    background-color: #fff;
+  }
+
+  .open-info-activ {
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
   }
 
   .work span {
