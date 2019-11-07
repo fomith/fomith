@@ -1662,11 +1662,11 @@ footer div p {
     width: auto;
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .services-articles article {
-    width: auto;
     margin: 20px;
   }
 
@@ -1800,7 +1800,10 @@ footer div p {
   }
 
   .slide-promo img {
+    border-radius: 50%;
     margin: 0 auto;
+    width: 25vw;
+    height: 25vw;
   }
 
   .slide-promo-box div {
