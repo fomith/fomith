@@ -48,7 +48,7 @@ $("#home").on("click", "a", function (event) {
     $(".nav_icon").removeClass("active-icon");
     $(".menu_panel").removeClass("active");
     $(".header").removeClass("active-header");
-    $('body,html').animate({ scrollTop: 70 }, 1500);
+    $('body,html').animate({ scrollTop: top }, 1500);
 });
 
 // menu mobile

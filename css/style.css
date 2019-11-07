@@ -375,7 +375,7 @@ video {
 /* main team */
 .team {
   background-color: #fff;
-  height: 1060px;
+  height: 1080px;
 }
 
 .team .container {
@@ -560,7 +560,8 @@ span.open-info {
 .block-four {
   position: absolute;
   width: 1170px;
-  bottom: -269px;
+  bottom: -300px;
+  min-height: 340px;
   box-sizing: border-box;
   opacity: 0;
 }
