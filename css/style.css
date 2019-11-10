@@ -424,6 +424,7 @@ video {
   flex-direction: column;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   position: relative;
+  transition: 0.5s;
 }
 
 .team-articles .team-left .img {
@@ -442,6 +443,11 @@ video {
   width: 263px;
   height: 270px;
   background-image: linear-gradient(to top, rgba(178, 124, 245, 0.5), transparent), url(../Image/team-4foto.png);
+}
+
+.team-articles article:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
 }
 
 .team-articles .team-right .img {
