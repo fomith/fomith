@@ -365,10 +365,183 @@ main {
   border-bottom: 3px solid #feb960;
 }
 
-video {
-  width: 100%;
+.video {
   height: 500px;
+  overflow: hidden;
+  position: relative;
   object-fit: cover;
+}
+
+.video:hover .controls {
+  transform: translateY(0);
+}
+
+.video video {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.video .controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(100%) translateY(-3px);
+  transition: all 0.5s;
+}
+
+.video .controls progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  color: #808080;
+  background-color: #000;
+}
+
+.video .controls progress::-moz-progress-bar {
+  color: #808080;
+  background-color: #000;
+}
+
+.video .controls progress::-webkit-progress-bar {
+  color: #808080;
+  background-color: #000;
+}
+
+.video .controls .buttons {
+  padding: 10px;
+}
+
+.video .controls .buttons .play-pause {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.video .controls .buttons .play-pause::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 23px;
+  background: url("../image/icon-play.png") center/cover no-repeat;
+}
+
+.video .controls .buttons .play::before {
+  content: "";
+  background: url("../image/icon-play.png") center/cover no-repeat;
+}
+
+.video .controls .buttons .pause::before {
+  content: "";
+  background: url("../image/icon-pause.png") center/cover no-repeat;
+}
+
+.video .controls .buttons .stop {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.video .controls .buttons .stop::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 23px;
+  background: url("../image/icon-stop.png") center/cover no-repeat;
+}
+
+.video .controls .buttons .mute {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.video .controls .buttons .mute::before {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url("../image/icon-mute-on.png") center/cover no-repeat;
+}
+
+.video .controls .buttons .mute-on::before {
+  content: "";
+  background: url("../image/icon-mute-on.png") center/cover no-repeat;
+}
+
+.video .controls .buttons .mute-off::before {
+  content: "";
+  background: url("../image/icon-mute-off.png") center/cover no-repeat;
+}
+
+.video .btn-play-main {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 3px #000;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.video .btn-play-main::after {
+  content: "";
+  width: 47px;
+  height: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  background: url("../image/play.png") center/cover no-repeat;
+}
+
+.video .btn-play-main::before {
+  content: "Click to play the video";
+  font-family: "poppins-regular";
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 3px #000;
+  width: 200px;
+  position: absolute;
+  top: 145%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video .btn-play-main:hover {
+  border: 3px solid #808080;
+  box-shadow: 0 0 3px #808080;
+  cursor: pointer;
+}
+
+.video .btn-play-main:hover::after {
+  background: url("../image/play-hover.png") center/cover no-repeat;
+}
+
+.video .btn-play-main:hover::before {
+  color: #808080;
+}
+
+.video .btn-play-main:focus {
+  outline: none;
+  box-shadow: 0 0 5px #808080;
+}
+
+.video .button-main-hidden {
+  display: none;
 }
 
 /* main video-bg */
@@ -1661,10 +1834,6 @@ footer div p {
     padding-bottom: 0px;
   }
 
-  .services .container > h2 {
-    font-size: 14vw;
-  }
-
   .services-articles {
     width: auto;
     margin-top: 0;
@@ -1679,10 +1848,6 @@ footer div p {
 
   .team {
     height: auto;
-  }
-
-  .team .container > h2 {
-    font-size: 14vw;
   }
 
   .team-articles {

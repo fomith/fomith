@@ -40,7 +40,7 @@
         <section class="home" id="home">
             <div class="container">
                 <h2>We design things with love and passion.</h2>
-                <a href="#work">Our Works</a>
+                <a class="pricing-center" href="#work">Our Works</a>
                 <div>
                     <article>
                         <img src="./Image/home-dollar.png" alt="">
@@ -108,8 +108,22 @@
                 </div>
             </div>
         </section>
-        <section class="video-bg">
+        <section class="video">
             <div id="video-container"></div>
+            <video id="video" poster="./video/move.jpg">
+                <source src="./video/move.mp4" type="video/mp4" />
+                <source src="./video/move.webm" type="video/webm" />
+                <source src="./video/move.ogv" type="video/ogg" /> </video>
+            <div class="controls">
+                <progress id="progress" max="100" value="0"></progress>
+                <div class="buttons">
+                    <button id="play-pause" class="play-pause play"></button>
+                    <button id="stop" class="stop"></button>
+                    <button id="mute" class="mute"></button>
+                </div>
+            </div>
+            <button class="btn-play-main"></button>
+
         </section>
         <section class="team" id="team">
             <div class="container">
@@ -597,7 +611,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/jquery-pack.js" ></script>
+    <script src="./js/jquery-pack.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/slick.js" async></script>

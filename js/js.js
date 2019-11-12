@@ -1,9 +1,89 @@
 // video
 
-window.onload = function () {
-    if (window.innerWidth >= 1171)
-        document.getElementById('video-container').innerHTML = '<video muted autoplay="autoplay" poster="./video/move.jpg" loop="loop"> <source src="./video/move.mp4" type="video/mp4" /> <source src="./video/move.webm" type="video/webm" /> <source src="./video/move.ogv" type="video/ogg" /> </video>'
-};
+
+
+let video = document.getElementById('video');
+let buttonPlayMain = document.querySelector('.btn-play-main');
+let btnPlayPause = document.getElementById('play-pause');
+let stopBtn = document.getElementById('stop');
+let muteBtn = document.getElementById('mute');
+let progress = document.getElementById('progress');
+
+video.addEventListener('click', function () {
+    if (video.paused) {
+        video.play();
+        buttonPlayMain.classList.add('button-main-hidden');
+        btnPlayPause.classList.add('pause');
+    } else {
+        video.pause();
+        buttonPlayMain.classList.remove('button-main-hidden');
+        btnPlayPause.classList.remove('pause');
+    }
+})
+
+buttonPlayMain.addEventListener('click', function () {
+    if (video.paused) {
+        video.play();
+        buttonPlayMain.classList.add('button-main-hidden');
+        btnPlayPause.classList.add('pause');
+    }
+});
+
+btnPlayPause.addEventListener('click', function () {
+    if (video.paused) {
+        btnPlayPause.classList.remove('play');
+        btnPlayPause.classList.add('pause');
+        buttonPlayMain.classList.add('button-main-hidden');
+        video.play();
+    } else {
+        btnPlayPause.classList.remove('pause');
+        btnPlayPause.classList.add('play');
+        buttonPlayMain.classList.remove('button-main-hidden');
+        video.pause();
+    }
+});
+
+stopBtn.addEventListener('click', function () {
+    video.pause();
+    video.currentTime = 0;
+    buttonPlayMain.classList.remove('button-main-hidden');
+    btnPlayPause.classList.remove('pause');
+});
+
+muteBtn.addEventListener('click', function () {
+    if (video.muted == false) {
+        muteBtn.classList.remove('mute-on');
+        muteBtn.classList.add('mute-off');
+        video.muted = true;
+    } else {
+        muteBtn.classList.remove('mute-off');
+        muteBtn.classList.add('mute-on');
+        video.muted = false;
+    }
+});
+
+video.ontimeupdate = progressUpdate;
+progress.onclick = videoRewind;
+
+function progressUpdate() {
+    console.log(video.duration);
+    console.log(video.currentTime);
+    let d = video.duration;
+    let c = video.currentTime;
+    progress.value = c / d * 100;
+}
+
+function videoRewind() {
+    let w = this.offsetWidth;
+    let o = event.offsetX;
+    console.log(w);
+    console.log(o);
+    this.value = o / w * 100;
+    video.pause();
+    video.currentTime = video.duration * (o / w);
+    video.play();
+}
+
 
 //slick slider 
 
@@ -127,7 +207,7 @@ $(".team-center-left").click(function () {
         teamRightTrigger = 0;
     }
 });
-    
+
 $(".team-center-right").click(function () {
     if (teamCenterRightTrigger == 0) {
         teamCenterRightTrigger = 1;
