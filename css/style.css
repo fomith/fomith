@@ -429,17 +429,17 @@ main {
   display: inline-block;
   width: 18px;
   height: 23px;
-  background: url("../image/icon-play.png") center/cover no-repeat;
+  background: url("../Image/icon-play.png") center/cover no-repeat;
 }
 
 .video .controls .buttons .play::before {
   content: "";
-  background: url("../image/icon-play.png") center/cover no-repeat;
+  background: url("../Image/icon-play.png") center/cover no-repeat;
 }
 
 .video .controls .buttons .pause::before {
   content: "";
-  background: url("../image/icon-pause.png") center/cover no-repeat;
+  background: url("../Image/icon-pause.png") center/cover no-repeat;
 }
 
 .video .controls .buttons .stop {
@@ -454,7 +454,7 @@ main {
   display: inline-block;
   width: 18px;
   height: 23px;
-  background: url("../image/icon-stop.png") center/cover no-repeat;
+  background: url("../Image/icon-stop.png") center/cover no-repeat;
 }
 
 .video .controls .buttons .mute {
@@ -469,17 +469,17 @@ main {
   display: inline-block;
   width: 23px;
   height: 23px;
-  background: url("../image/icon-mute-on.png") center/cover no-repeat;
+  background: url("../Image/icon-mute-on.png") center/cover no-repeat;
 }
 
 .video .controls .buttons .mute-on::before {
   content: "";
-  background: url("../image/icon-mute-on.png") center/cover no-repeat;
+  background: url("../Image/icon-mute-on.png") center/cover no-repeat;
 }
 
 .video .controls .buttons .mute-off::before {
   content: "";
-  background: url("../image/icon-mute-off.png") center/cover no-repeat;
+  background: url("../Image/icon-mute-off.png") center/cover no-repeat;
 }
 
 .video .btn-play-main {
@@ -504,7 +504,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-45%, -50%);
-  background: url("../image/play.png") center/cover no-repeat;
+  background: url("../Image/play.png") center/cover no-repeat;
 }
 
 .video .btn-play-main::before {
@@ -528,7 +528,7 @@ main {
 }
 
 .video .btn-play-main:hover::after {
-  background: url("../image/play-hover.png") center/cover no-repeat;
+  background: url("../Image/play-hover.png") center/cover no-repeat;
 }
 
 .video .btn-play-main:hover::before {
