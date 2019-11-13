@@ -579,6 +579,8 @@ main {
   margin-top: 23px;
   font-family: "poppins-regular";
   font-size: 18px;
+  text-align: center;
+  width: 95%;
 }
 
 .team-articles {
@@ -916,6 +918,8 @@ main .stats {
   font-size: 19px;
   text-align: center;
   margin-bottom: 75px;
+  text-align: center;
+  width: 95%;
 }
 
 .work-block {
@@ -980,9 +984,10 @@ main .stats {
 
 .pricing p {
   font-size: 19px;
-  text-align: center;
   font-family: "poppins-regular";
   margin-bottom: 78px;
+  text-align: center;
+  width: 95%;
 }
 
 .pricing article {
@@ -1040,6 +1045,7 @@ main .stats {
 .pricing .pricing-elements div p {
   margin-top: 10px;
   font-size: 17px;
+  margin-bottom: 0;
 }
 
 .pricing .starter div {
@@ -1064,9 +1070,7 @@ main .stats {
 }
 
 .pricing-elements a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 3;
   margin: 38px auto;
   width: 180px;
   height: 50px;
@@ -1075,7 +1079,6 @@ main .stats {
   font-family: "poppins-semibold";
   transition: 0.5s;
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -1274,9 +1277,10 @@ main .stats {
 
 .select p {
   font-size: 19px;
-  text-align: center;
   font-family: "poppins-regular";
   margin-bottom: 35px;
+  text-align: center;
+  width: 95%;
 }
 
 .select-grid {
@@ -1565,6 +1569,7 @@ main .stats {
   text-align: center;
   font-family: "poppins-regular";
   margin-bottom: 80px;
+  width: 95%;
 }
 
 /* Form */
@@ -2071,7 +2076,7 @@ footer div p {
 
   .select-grid img {
     top: 0;
-    left: 0;
+    left: 5px;
   }
 
   .select-grid h3 {
