@@ -1863,6 +1863,9 @@ footer img:hover {
     display: none;
   }
 
+  .services {
+    padding-bottom: 15px;
+  }
   .services .container {
     padding-bottom: 0px;
     padding-top: 70px;
@@ -1900,7 +1903,7 @@ footer img:hover {
     height: auto;
   }
   .video video {
-    height: 35vh;
+    height: 40vh;
   }
 
   .team {
@@ -1915,6 +1918,7 @@ footer img:hover {
 
   .services-slick {
     position: relative;
+    padding-bottom: 15px;
   }
 
   .team-articles {
