@@ -97,7 +97,7 @@ $(document).ready(function () {
         pauseOnHover: true,
         pauseOnDotsHover: true,
     });
-    $('.slider').slick({
+    $('.services-articles').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,

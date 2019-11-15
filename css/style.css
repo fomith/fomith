@@ -1870,9 +1870,13 @@ footer img:hover {
   }
   .services .container .services-articles h2 {
     font-size: 19px;
+    text-align: center;
   }
   .services .container .number-block {
     top: -12px;
+  }
+  .services .container .slick-slide img {
+    margin: 0 auto;
   }
 
   .services-articles {
@@ -1881,10 +1885,12 @@ footer img:hover {
     margin-bottom: 0;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 90vw;
   }
 
   .services-articles article {
     margin: 20px;
+    width: 262px !important;
   }
 
   .team {
