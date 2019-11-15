@@ -1859,6 +1859,9 @@ footer img:hover {
   .stats .container div {
     margin: 8px;
   }
+  .stats .container div span {
+    display: none;
+  }
 
   .services .container {
     padding-bottom: 0px;
@@ -1897,7 +1900,7 @@ footer img:hover {
     height: auto;
   }
   .video video {
-    height: 50vh;
+    height: 35vh;
   }
 
   .team {
