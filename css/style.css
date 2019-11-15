@@ -1900,6 +1900,13 @@ footer img:hover {
   .team .container {
     padding: 70px 0 40px;
   }
+  .team .container .number-block {
+    top: -12px;
+  }
+
+  .services-slick {
+    position: relative;
+  }
 
   .team-articles {
     width: 100vw;

@@ -1,5 +1,16 @@
-// video
-
+window.onload = function () {
+    if (window.innerWidth <= 1170)
+        $(".services-articles").addClass("services-slick");
+        $('.services-slick').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 1500,
+            arrows: false,
+            pauseOnHover: true,
+            pauseOnDotsHover: true,
+        });
+};
 
 
 let video = document.getElementById('video');
@@ -97,15 +108,7 @@ $(document).ready(function () {
         pauseOnHover: true,
         pauseOnDotsHover: true,
     });
-    $('.services-articles').slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 1500,
-        arrows: false,
-        pauseOnHover: true,
-        pauseOnDotsHover: true,
-    });
+    
 });
 
 // scroll html
