@@ -1893,6 +1893,13 @@ footer img:hover {
     width: 262px !important;
   }
 
+  .video {
+    height: auto;
+  }
+  .video video {
+    height: 70vh;
+  }
+
   .team {
     height: auto;
   }
@@ -1981,6 +1988,25 @@ footer img:hover {
   .full-info-right {
     margin: 0 auto;
     border-left: none;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+  }
+  .full-info-right p {
+    display: none;
+  }
+
+  .share-social-icon {
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .share-social-icon img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
   }
 
   .full-info-left {
