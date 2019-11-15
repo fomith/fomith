@@ -692,7 +692,6 @@ span.open-info {
   display: flex;
   z-index: 2;
   padding: 60px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .info-block h2 {
