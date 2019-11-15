@@ -1921,40 +1921,45 @@ footer img:hover {
     height: auto;
   }
 
+  .team-articles article {
+    box-shadow: none;
+    border-bottom: none;
+  }
+
   .team-articles .team-left .img {
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    background-size: contain;
+    width: 23vw;
+    height: 23vw;
+    background-size: cover;
   }
 
   .team-articles .team-center-left .img {
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    background-size: contain;
+    width: 23vw;
+    height: 23vw;
+    background-size: cover;
   }
 
   .team-articles .team-center-right .img {
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    background-size: contain;
+    width: 23vw;
+    height: 23vw;
+    background-size: cover;
   }
 
   .team-articles .team-right .img {
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    background-size: contain;
+    width: 23vw;
+    height: 23vw;
+    background-size: cover;
   }
 
   .team-articles p {
-    font-size: 2vw;
+    display: none;
   }
 
   .team-articles h2 {
-    font-size: 2vw;
+    display: none;
   }
 
   .info-block {
@@ -1971,6 +1976,7 @@ footer img:hover {
     bottom: 0;
     width: 100vw;
     box-sizing: border-box;
+    margin-top: 15px;
   }
 
   .full-info-right {
