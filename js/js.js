@@ -11,7 +11,7 @@ $(window).on('load', function () {
 
 
 window.onload = function () {
-    if (window.innerWidth <= 1170)
+    if (window.innerWidth <= 770)
         $(".services-articles").addClass("services-slick");
     $('.services-slick').slick({
         dots: true,
@@ -179,7 +179,7 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
     let height = $(window).scrollTop();
-    if ((height > 3800) && (height < 3900)) {
+    if ((height > 2700) && (height < 3900)) {
         $(function () {
             $({ n: 0 }).animate({ n: 12458 }, { duration: 400E1, step: function (a) { $("#n1").html(a | 0) } })
             $({ n: 0 }).animate({ n: 1796 }, { duration: 400E1, step: function (a) { $("#n2").html(a | 0) } })

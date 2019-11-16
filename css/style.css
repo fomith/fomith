@@ -799,7 +799,11 @@ main .stats {
 .stats h2 {
   font-family: "poppins-medium";
   font-size: 20px;
-  margin-top: 25px;
+  display: contents;
+}
+
+.stats img {
+  margin-bottom: 25px;
 }
 
 .stats p {
@@ -1718,9 +1722,12 @@ footer img:hover {
 
 /* loader */
 .loader {
+  position: fixed;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   animation-delay: 1s;
@@ -2097,6 +2104,11 @@ footer img:hover {
     display: block !important;
     margin: 0 auto !important;
     width: 262px !important;
+  }
+
+  .services-articles article img {
+    margin: 0 auto;
+    display: block;
   }
 
   .video {
