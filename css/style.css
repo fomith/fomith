@@ -136,6 +136,7 @@ header nav a:hover {
   position: fixed;
   background-color: #fff;
   z-index: 100;
+  box-shadow: 0px 0px 7px 0px #dbdbdb;
 }
 
 .header-fixed div > a {
@@ -335,6 +336,12 @@ main {
   flex-direction: column;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding: 60px 35px;
+  transition: 0.5s;
+}
+
+.services-articles article:hover {
+  background-color: #f0f8ff;
+  transition: 0.5s;
 }
 
 .services-articles h2 {
@@ -1298,6 +1305,12 @@ main .stats {
 .select-grid div {
   padding: 103px 37px 31px;
   position: relative;
+  transition: 0.5s;
+}
+
+.select-grid div:hover {
+  background-color: #f0f8ff;
+  transition: 0.5s;
 }
 
 .select-grid img {
