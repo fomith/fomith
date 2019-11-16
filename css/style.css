@@ -186,7 +186,7 @@ main {
 .home .container div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 85px 200px 0 200px;
 }
 
@@ -200,6 +200,7 @@ main {
 
 .home .container article {
   width: 235px;
+  height: 155px;
 }
 
 .home article p {
@@ -2437,7 +2438,7 @@ footer img:hover {
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 500px) {
-  .home .container article:first-child {
+  .home .container article:last-child {
     display: none;
   }
 }
